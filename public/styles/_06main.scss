@@ -1,0 +1,77 @@
+main{
+	margin-left: 300px;
+	letter-spacing: 0.2px;
+	section{
+		min-height: 100vh;
+		p{
+			margin: 3rem 0;
+			font-family: "Comfortaa Light";
+			font-size: 1.5rem;
+			text-align: center;
+		}
+		&#welcome{
+			h2{
+				background-image: linear-gradient(to left, #a2a4a6 0%, $dark-color 100%);
+			}
+			div{
+				display:flex;
+				flex-direction:column;
+				min-height: calc(100vh - 85px);
+				align-items: center;
+				justify-content: center;
+				h3{
+					font-family: "Abys", sans-serif;
+					font-size: 5rem;
+					text-align: center;
+				}
+				h4{
+					font-family: "Comfortaa Light";
+				}
+			}
+		}
+		&#about{
+			h2{
+				background-image: linear-gradient(to right, $dark-color 20%, #517fa4 100%);
+			}
+		}
+		&#competences{
+			h2{
+				background-image: linear-gradient(to right, $dark-color 20%, $staryellow 100%);
+			}
+		}
+		&#projets{
+			h2{
+				background-image: linear-gradient(to right, $dark-color 20%, #78b32d 100%);
+			}
+		}
+		&#formations{
+			h2{
+				background-image: linear-gradient(to right, $dark-color 20%, #ab8467 100%);
+			}
+		}
+		&#experiences{
+			h2{
+				background-image: linear-gradient(to right, $dark-color 20%, #f09819 100%);
+			}
+		}
+		&#hobbies{
+			h2{
+				background-image: linear-gradient(to right, $dark-color 20%, #c71d6f 100%);
+			}
+		}
+		&#contact{
+			h2{
+				background-image: linear-gradient(to right, $dark-color 20%, #7e51c4 100%);
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 992px){
+    main{
+		margin-left: 0px;
+		h2{
+			padding-left: 15px;
+		}
+	}
+}

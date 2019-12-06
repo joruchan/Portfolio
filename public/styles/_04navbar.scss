@@ -1,0 +1,95 @@
+nav{
+	&.side-nav{
+		position:fixed;
+		left:0;
+		top:0;
+		width: 50px;
+		height: 100vh;
+		margin: 0;
+		background: rgba(240,240,240,1);
+		display:flex;
+		align-items: center;
+		justify-content: center;
+		color: $dark-color;
+	}
+}
+
+@media only screen and (max-width: 992px){
+    nav{
+		&.side-nav{
+			height: 50px;
+			top: 90%;
+		}
+	}
+}
+
+#slide-out{
+	.sidenav-close{
+		position:fixed;
+		right: 0;
+		top: 0;
+		width: 50px;
+		height: 100vh;
+		background: rgba(240,240,240,1);
+		display:flex;
+		align-items: center;
+		justify-content: center;
+		color: $dark-color;
+		cursor: pointer;
+	}
+	i.material-icons{
+		margin: 0 15px 0 0;
+		&.md-36{
+			margin: 0;
+		}
+	}
+	.margin-25-top{
+		margin-top:25px;
+	}
+	.margin-25-bottom{
+		margin-bottom: 25px;
+	}
+}
+
+.download-text{
+	color: darkgrey;
+	font-style: italic;
+	padding-left: 15px;
+	font-weight: lighter;
+	opacity:0;
+	transition: all 250ms ease-in-out;
+}
+
+.nav{
+	&-about:hover > a > i.material-icons{
+		color: $indigo;
+	}
+	&-competences:hover > a > i.material-icons{
+		color: $staryellow;
+	}
+	&-projets:hover > a > i.material-icons{
+		color: $lightgreen;
+	}
+	&-formations:hover > a > i.material-icons{
+		color: $brown;
+	}
+	&-experiences:hover > a > i.material-icons{
+		color: $orange;
+	}
+	&-hobbies:hover > a > i.material-icons{
+		color: $darkpink;
+	}
+	&-contact:hover > a > i.material-icons{
+		color: $purple;
+	}
+	&-cv:hover{
+		& > a > i.material-icons{
+			color: $blue;
+		}
+		& > a > span{
+			opacity:1;
+		}
+	} 
+}
+
+

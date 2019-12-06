@@ -1,0 +1,51 @@
+@font-face{
+  font-family: "Abys";
+  src: url("assets/fonts/Abys-Regular.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: "Comfortaa";
+  src: url("assets/fonts/Comfortaa-VariableFont_wght.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: "Comfortaa Light";
+  src: url("assets/fonts/Comfortaa-Light.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+h1{
+  font-family: "Abys";
+  font-size: 3rem;
+  color: $dark-color;
+  padding-left: 32px;
+  padding-right: 32px;
+  span{
+    font-family: 'Comfortaa';
+    font-size: 1rem;
+    font-weight: lighter;
+  }
+}
+
+h2{
+  font-family:'Abys';
+  display:block;
+  width: 100%;
+  color: white;
+  font-weight: lighter;
+  font-size: 5rem;
+  padding-left: 50px;
+  margin: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
