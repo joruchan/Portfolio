@@ -1,3 +1,7 @@
+*{
+	scroll-behavior: smooth;
+}
+
 main{
 	margin-left: 300px;
 	letter-spacing: 0.2px;
@@ -33,10 +37,218 @@ main{
 			h2{
 				background-image: linear-gradient(to right, $dark-color 20%, #517fa4 100%);
 			}
+			.bio{
+				min-height: calc(100vh - 185px);
+				display:flex;
+				flex-direction: column;
+				justify-content: center;
+				p{
+					margin: 1rem;
+					text-align: left;
+				}
+			}
 		}
 		&#competences{
 			h2{
 				background-image: linear-gradient(to right, $dark-color 20%, $staryellow 100%);
+			}
+			.competences-list{
+				position:relative;
+				font-size: 5rem;
+				margin: 3rem 0;
+				span{
+					position:absolute;
+					&.bracket-left{
+						top:-50px;
+						left:-50px;
+					}
+					&.bracket-right{
+						bottom: -50px;
+						right: -50px;
+					}
+				}
+				&__details{
+					display:flex;
+					flex-direction:column;
+					align-items:center;
+					width: 100%;
+					margin: 1rem 0;
+					border-radius: 3px;
+					box-shadow:
+					0 0px 4px rgba(0,0,0,0.12), 
+					0 0px 8px rgba(0,0,0,0.18);
+					
+					h4{
+						display:block;
+						width: 100%;
+						padding: 1rem 2rem;
+					}
+					.divider{
+						width: 100%;
+					}
+					.icons{
+						display:flex;
+						flex-wrap: wrap;
+						width: 100%;
+						padding: 3rem 0;
+						.icon{
+							opacity:1;
+							position:relative;
+							width: 100px;
+							height: 100px;
+							margin: 0 2rem;
+							img{
+								width: 100px;
+								transition: all 500ms ease-in-out;
+							}
+							&:after{
+								content: "";
+								position: absolute;
+								opacity: 0;
+								top: 0;
+								left: 0;
+								height: 100%;
+								width: 100%;
+								background-size: contain;
+								background-repeat: no-repeat;
+								transition: all 500ms ease-in-out;
+							}
+							&:hover > img{
+								opacity: 0;
+							}
+							&:hover:after{
+								opacity: 1;
+							}
+						}
+						.icon-html{
+							&:after{
+								background-image: url(/public/assets/images/logos/html-color.png);
+							}
+						}
+						.icon-css{
+							&:after{
+								background-image: url(/public/assets/images/logos/css-color.png);
+							}
+						}
+						.icon-sass{
+							&:after{
+								background-image: url(/public/assets/images/logos/sass-color.png);
+							}
+						}
+						.icon-materialise{
+							display:flex;
+							align-items: center;
+							&:after{
+								background-position: center center;
+								background-image: url(/public/assets/images/logos/materialise-color.png);
+							}
+						}
+						.icon-bootstrap{
+							&:after{
+								background-image: url(/public/assets/images/logos/bootstrap-color.png);
+							}
+						}
+						.icon-javascript{
+							&:after{
+								background-image: url(/public/assets/images/logos/javascript-color.png);
+							}
+						}
+						.icon-jquery{
+							&:after{
+								background-image: url(/public/assets/images/logos/jquery-full.png);
+							}
+						}
+						.icon-react{
+							&:after{
+								background-image: url(/public/assets/images/logos/react-color.png);
+							}
+						}
+						.icon-vue{
+							&:after{
+								background-image: url(/public/assets/images/logos/vue-color.png);
+							}
+						}
+						.icon-angular{
+							&:after{
+								background-image: url(/public/assets/images/logos/angular-color.png);
+							}
+						}
+						.icon-phaser{
+							&:after{
+								background-image: url(/public/assets/images/logos/phaser-color.png);
+							}
+						}
+						.icon-php{
+							&:after{
+								background-image: url(/public/assets/images/logos/php-color.png);
+							}
+						}
+						.icon-node{
+							&:after{
+								background-image: url(/public/assets/images/logos/node-color.png);
+							}
+						}
+						.icon-mysql{
+							&:after{
+								background-image: url(/public/assets/images/logos/mysql-color.png);
+							}
+						}
+						.icon-mongodb{
+							&:after{
+								background-image: url(/public/assets/images/logos/mongo-color.png);
+							}
+						}
+						.icon-twig{
+							&:after{
+								background-size: cover;
+								background-image: url(/public/assets/images/logos/twig-color.png);
+							}
+						}
+						.icon-wordpress{
+							&:after{
+								background-image: url(/public/assets/images/logos/wordpress-color.png);
+							}
+						}
+						.icon-drupal{
+							&:after{
+								background-image: url(/public/assets/images/logos/drupal-color.png);
+							}
+						}
+						.icon-photoshop{
+							&:after{
+								background-image: url(/public/assets/images/logos/photoshop-color.png);
+							}
+						}
+						.icon-illustrator{
+							&:after{
+								background-image: url(/public/assets/images/logos/illustrator-color.png);
+							}
+						}
+						.icon-xd{
+							&:after{
+								background-image: url(/public/assets/images/logos/xd-color.png);
+							}
+						}
+						.icon-git{
+							&:after{
+								background-image: url(/public/assets/images/logos/git-color.png);
+							}
+						}
+						.icon-visual{
+							width: 80px;
+							display:flex;
+							align-items: center;
+							img{
+								width: 80px;
+							}
+							&:after{
+								background-position: center;
+								background-image: url(/public/assets/images/logos/visual-color.png);
+							}
+						}
+					}
+				}
+				
 			}
 		}
 		&#projets{
