@@ -27,7 +27,7 @@
 h1{
   font-family: "Abys";
   font-size: 3rem;
-  color: $dark-color;
+  color: var(--dark-color);
   padding-left: 32px;
   padding-right: 32px;
   span{
@@ -41,7 +41,7 @@ h2{
   font-family:'Abys';
   display:block;
   width: 100%;
-  color: white;
+  color: var(--light-color);
   font-weight: lighter;
   font-size: 5rem;
   padding-left: 50px;

@@ -1,4 +1,8 @@
-$dark-color: #666666;
+:root{
+	--dark-color: #666;
+	--light-color: white;
+	--off-light: #f0f0f0;	
+}
 
 $indigo: #536dfe;
 $blue: #2196f3;
@@ -8,3 +12,10 @@ $brown: #795548;
 $orange: #ff7043;
 $darkpink: #d81b60;
 $purple: #ab47bc;
+
+
+.darkmode{
+	--dark-color: white;
+	--light-color: #666;
+	--off-light: #737373;
+}

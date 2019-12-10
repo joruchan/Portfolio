@@ -6,11 +6,11 @@ nav{
 		width: 50px;
 		height: 100vh;
 		margin: 0;
-		background: rgba(240,240,240,1);
+		background: var(--off-light);
 		display:flex;
 		align-items: center;
 		justify-content: center;
-		color: $dark-color;
+		color: var(--dark-color);
 	}
 }
 
@@ -24,17 +24,21 @@ nav{
 }
 
 #slide-out{
+	background: var(--light-color);
+	a{
+		color: var(--dark-color);
+	}
 	.sidenav-close{
 		position:fixed;
 		right: 0;
 		top: 0;
 		width: 50px;
 		height: 100vh;
-		background: rgba(240,240,240,1);
+		background: var(--off-light);
 		display:flex;
 		align-items: center;
 		justify-content: center;
-		color: $dark-color;
+		color: var(--dark-color);
 		cursor: pointer;
 	}
 

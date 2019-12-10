@@ -1,4 +1,7 @@
 import $ from 'jquery';
+import {
+  darkMode, darkModeToggle, enableDarkMode, disableDarkMode,
+} from './app/darkmode';
 
 
 document.addEventListener('DOMContentLoaded', () => {

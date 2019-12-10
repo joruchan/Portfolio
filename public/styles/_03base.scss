@@ -1,8 +1,10 @@
 *{
   box-sizing: border-box;
+	scroll-behavior: smooth;
 }
 
 body{
   font-family: "Comfortaa", sans-serif;
-  color: $dark-color;
+  color: var(--dark-color);
+  background: var(--light-color);
 }
