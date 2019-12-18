@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-get('./src/app/projects.json')
+get('src/app/projects.json')
   .then((response) => response.data.projects)
   .then((projects) => {
     const sortedProjects = projects.reverse();
