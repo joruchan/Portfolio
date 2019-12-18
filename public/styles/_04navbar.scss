@@ -10,17 +10,25 @@ nav{
 		display:flex;
 		align-items: center;
 		justify-content: center;
-		color: var(--dark-color);
+        color: var(--dark-color);
+        z-index:1;
+
 	}
 }
 
 @media only screen and (max-width: 992px){
     nav{
 		&.side-nav{
-			height: 50px;
-			top: 90%;
+
+            top: 10px;
+            height: 50px;
+
 		}
-	}
+    }
+    #slide-out{
+        min-height: 100vh;
+        padding-bottom: 0;
+    }
 }
 
 #slide-out{
@@ -98,3 +106,20 @@ nav{
 }
 
 
+@media only screen and (max-height: 670px){
+    #slide-out{
+        li:nth-of-type(2){
+            height: 15%;
+            position:relative;
+            .name{
+                h1{
+                    font-size: 2rem;
+                    margin-top:1rem;
+                }
+            }
+        }
+        .margin-25-top{
+            margin-top: 10px;
+        }
+    }
+}

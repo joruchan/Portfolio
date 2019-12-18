@@ -1,7 +1,8 @@
 
 main{
 	margin-left: 300px;
-	letter-spacing: 0.2px;
+    letter-spacing: 0.2px;
+    max-width:100%;
 	section{
 		min-height: 100vh;
 		p{
@@ -262,7 +263,10 @@ main{
 		&#projets{
 			h2{
 				background-image: linear-gradient(to right, var(--dark-color) 20%, #78b32d 100%);
-			}
+            }
+            .projects-list{
+                padding-top: 3rem;
+            }
 		}
 		&#formations{
 			h2{
