@@ -1,6 +1,6 @@
 /* eslint-disable no-tabs */
 import $ from 'jquery';
-import { get } from 'axios';
+import data from './app/projects.json';
 import {
   darkMode, darkModeToggle, enableDarkMode, disableDarkMode,
 } from './app/darkmode';
@@ -37,13 +37,11 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-get('src/app/projects.json')
-  .then((response) => response.data.projects)
-  .then((projects) => {
-    const sortedProjects = projects.reverse();
-    for (const project of sortedProjects) {
-      const techUsed = project.techUsed.join(' - ');
-      let component = `
+
+const sortedProjects = data.projects.reverse();
+for (const project of sortedProjects) {
+  const techUsed = project.techUsed.join(' - ');
+  let component = `
 					  <div class="col l6">
 						  <div class="card sticky-action .shadow-diffuse">
 							  <div class="card-image waves-effect waves-block waves-light">
@@ -58,13 +56,13 @@ get('src/app/projects.json')
 								  </span>
 							  </div>
 							  <div class="card-action">`;
-      if (project.linkLive) {
-        component += `<a href="${project.linkLive}">View Live <i class="material-icons">language</i></a>`;
-      }
-      if (project.linkCode) {
-        component += `<a href="${project.linkCode}">View Code <i class="material-icons">code</i></a>`;
-      }
-      component += 	`							  
+  if (project.linkLive) {
+    component += `<a href="${project.linkLive}">View Live <i class="material-icons">language</i></a>`;
+  }
+  if (project.linkCode) {
+    component += `<a href="${project.linkCode}">View Code <i class="material-icons">code</i></a>`;
+  }
+  component += 	`							  
 				  </div>
 				  <div class="card-reveal">
 					  <span class="card-title grey-text text-darken-4">${project.name}<i class="material-icons right">close</i></span>
@@ -78,6 +76,5 @@ get('src/app/projects.json')
 			  </div>
 		  </div>
 		  `;
-      $('.projects-list').append(component);
-    }
-  });
+  $('.projects-list').append(component);
+}
