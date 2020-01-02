@@ -1,0 +1,29 @@
+.darkmode{
+    h2{
+        color: white;
+    }
+    #about h2{
+        background-image: linear-gradient(to left, #666 20%, #517fa4 100%);
+    }
+    #competences h2{
+        background-image: linear-gradient(to left, #666 20%, $staryellow 100%);
+    }
+    #projets h2{
+        background-image: linear-gradient(to left, #666 20%, #78b32d 100%);
+    }
+    #formations h2{
+        background-image: linear-gradient(to left, #666 20%, #ab8467 100%);
+    }
+    #experiences h2{
+        background-image: linear-gradient(to left, #666 20%, #f09819 100%);
+    }
+    #hobbies h2{
+        background-image: linear-gradient(to left, #666 20%, #c71d6f 100%);
+    }
+    #contact h2{
+        background-image: linear-gradient(to left, #666 20%, #7e51c4 100%);
+    }
+    .divider{
+        background-color: #555;
+    }
+}
