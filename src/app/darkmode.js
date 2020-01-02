@@ -7,33 +7,33 @@ export const darkModeIcon = document.getElementById('darkModeIcon');
 // if disabled, turn it on
 
 export const enableDarkMode = () => {
-  // add darkmode class to the body
+  // ajouter la classe "darkmode" au body
   document.body.classList.add('darkmode');
-  // update darkmode in the localstorage
+  // mettre à jour l'item darkMode dans le localstorage
   localStorage.setItem('darkMode', 'enabled');
 };
 
 export const disableDarkMode = () => {
-  // remove darkmode class from the body
+  // enlever la classe darkmode du body
   document.body.classList.remove('darkmode');
-  // update darkmode in the localstorage
+  // mettre à jour l'item darkMode dans le localstorage
   localStorage.setItem('darkMode', null);
 };
 
-// if the localstorage has darkmode as enabled, enable darkmode
+// si le darkmode du localstorage est set comme enabled, lancer enableDarkMode
 if (darkMode === 'enabled') {
   enableDarkMode();
-  darkModeIcon.setAttribute('src', '/public/assets/images/sun.png');
+  darkModeIcon.setAttribute('src', './assets/images/sun.png');
 }
 
 darkModeToggle.addEventListener('click', () => {
-  // set the darkmode every time we click and not just once the page is loading
+  // Faire en sorte que le darkmode se set à chaque clic et non qu'une fois la page loadée
   darkMode = localStorage.getItem('darkMode');
   if (darkMode !== 'enabled') {
     enableDarkMode();
-    darkModeIcon.setAttribute('src', '/public/assets/images/sun.png');
+    darkModeIcon.setAttribute('src', './assets/images/sun.png');
   } else {
     disableDarkMode();
-    darkModeIcon.setAttribute('src', '/public/assets/images/moon.png');
+    darkModeIcon.setAttribute('src', './assets/images/moon.png');
   }
 });
