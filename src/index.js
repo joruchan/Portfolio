@@ -41,6 +41,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const elems = document.querySelectorAll('.tooltipped');
   const instances = M.Tooltip.init(elems);
 });
+document.addEventListener('DOMContentLoaded', () => {
+  const elems = document.querySelectorAll('.carousel');
+  const instances = M.Carousel.init(elems);
+});
 
 const sortedProjects = data.projects.reverse();
 for (const project of sortedProjects) {
@@ -52,7 +56,7 @@ for (const project of sortedProjects) {
 								  <img class="activator" src="./assets/images/projects/${project.screenshot}" />
 							  </div>
 							  <div class="card-content">
-								  <span class="card-title activator grey-text text-darken-4">
+								  <span class="card-title activator text-darken-4">
 									  ${project.name}
 									  <i class="material-icons right">
 										  more_vert
@@ -69,7 +73,7 @@ for (const project of sortedProjects) {
   component += 	`							  
 				  </div>
 				  <div class="card-reveal">
-					  <span class="card-title grey-text text-darken-4">${project.name}<i class="material-icons right">close</i></span>
+					  <span class="card-title text-darken-4">${project.name}<i class="material-icons right">close</i></span>
 					  <p>
 						  ${project.description}
 					  </p>

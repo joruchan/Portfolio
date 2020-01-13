@@ -204,12 +204,6 @@ main{
 								background-image: url(assets/images/logos/mongo-color.png);
 							}
 						}
-						.icon-twig{
-							&:after{
-								background-size: cover;
-								background-image: url(assets/images/logos/twig-color.png);
-							}
-						}
 						.icon-wordpress{
 							&:after{
 								background-image: url(assets/images/logos/wordpress-color.png);
@@ -285,6 +279,43 @@ main{
 		&#hobbies{
 			h2{
 				background-image: linear-gradient(to right, var(--dark-color) 20%, #c71d6f 100%);
+			}
+			.carousel-item{
+				img{
+					width: 64px;
+					margin: 0 7rem;
+				}
+				display:flex;
+				flex-direction:column;
+				align-items:center;
+				transform: scale(2);
+				color: var(--dark-color);
+				width: auto;
+				margin-top: 5rem;
+			}
+			.hobby-pic{
+				position:relative;
+				width: 64px;
+				height: 64px;
+				margin: 0 2rem;
+			}
+			.hobby{
+				margin-top: 2rem;
+				font-size: 1.2rem;
+				text-transform: uppercase;
+			}
+			.langues{
+				.carousel-item{
+					margin-top: 0;
+				}
+				.language{
+					margin-top: 2rem;
+				font-size: 1.2rem;
+				text-transform: uppercase;
+				}
+				.level{
+					font-size: 0.7rem;
+				}
 			}
 		}
 		&#contact{

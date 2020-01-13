@@ -26,7 +26,7 @@ $primary-color-hover: scale-color($primary-color, $lightness: 32%);
         position: relative;
         &:last-child {
             padding-bottom: 0;
-        }
+		}
     }
 
     /*----- TIMELINE INFO -----*/
@@ -46,7 +46,7 @@ $primary-color-hover: scale-color($primary-color, $lightness: 32%);
         top: 0; bottom: 0; left: 0;
         width: 15px;
         &:before {
-            background: $primary-color;
+            background: var(--dark-color);
             border: 3px solid transparent;
             border-radius: 100%;
             content: "";
@@ -72,7 +72,7 @@ $primary-color-hover: scale-color($primary-color, $lightness: 32%);
     }
     .timeline-item:not(.period):hover .timeline-marker:before {
         background: transparent;
-        border: 3px solid $primary-color;
+        border: 3px solid var(--dark-color);
     }
 
     /*----- TIMELINE CONTENT -----*/
@@ -168,10 +168,10 @@ $primary-color-hover: scale-color($primary-color, $lightness: 32%);
 		.timeline-marker {
 			&:before {
 				background: transparent;
-				border-color: $primary-color;
+				border-color: var(--dark-color);
 			}
 		}
 		.timeline-item:hover .timeline-marker:before {
-			background: $primary-color;
+			background: var(--dark-color);
 		}
 	}

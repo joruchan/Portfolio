@@ -1,9 +1,11 @@
 #projets{
     .card{
+        background: var(--light-color);
         .card-title{
             font-size: 1.3rem;
             color: var(--dark-color);
             margin:0;
+            
         }
         .card-action{
             display:flex;
@@ -19,6 +21,7 @@
             }
         }
         .card-reveal{
+            background: var(--light-color);
             .card-title{
                 margin-bottom: 2rem;
             }
