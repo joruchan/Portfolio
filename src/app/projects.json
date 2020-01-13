@@ -1,76 +1,85 @@
 {
-	"projects": [
-		{
-			"id": 0,
-			"name": "Ibuki Training",
-			"screenshot": "ibuki.png",
-			"description": "Site one-page pour un personal trainer sur Waterloo. Réalisé pré-formation en autodidacte afin de me familiariser avec l'HTML et le SCSS. Son développement est mis de côté pour l'instant afin de pouvoir l'améliorer une fois ma formation terminée.",
-			"linkCode": "https://bitbucket.org/joruchan/ibukitraining/src/master/",
-			"linkLive": "https://ibukitraining.com",
-			"techUsed": ["HTML", "SSCSS"]
-		},
-		{
-			"id": 2,
-			"name": "Whack A Mole",
-			"screenshot": "whackAMole.png",
-			"description": "Petit jeu développé en jQuery durant ma formation chez Interface3 afin de s'entraîner à l'utilisation de jQuery et des évènements.",
-			"linkCode": "https://github.com/joruchan/whack-a-mole",
-			"linkLive": "https://joruchan.github.io/whack-a-mole/dist/",
-			"techUsed": ["jQuery", "HTML", "SCSS"]
-		},
-		{
-			"id": 3,
-			"name": "Games for grabs!",
-			"screenshot": "gamesToGive.png",
-			"description": "Application créée en Javascript et Bootstrap effectuant une requête vers un server JSON, listant des jeux pour lesquels j'avais des clés digitales en trop afin que des utilisateurs puissent les réclamer et recevoir la clé par e-mail.",
-			"linkCode": null,
-			"linkLive": "https://joruchan.github.io/jordane-games/dist/index.html",
-			"techUsed": ["jQuery", "Javascript", "SCSS", "Bootstrap", "HTML"]
-		},
-		{
-			"id": 3,
-			"name": "RouletteJS",
-			"screenshot": "RouletteJS.png",
-			"description": "Roulette de casino réalisée en jQuery comme exercice durant ma formation Interface3. A remporté la 1ère place d'un concours inter-classes.",
-			"linkCode": "https://github.com/joruchan/i3-roulette-JS-2019",
-			"linkLive": "https://joruchan.github.io/i3-roulette-JS-2019/dist/",
-			"techUsed": ["jQuery", "Javascript", "SCSS", "HTML"]
-		},
-		{
-			"id": 4,
-			"name": "Find Your Journey",
-			"screenshot": "fyj.png",
-			"description": "Site réalisé lors du premier projet de groupe (3 personnes) durant la formation Front-end Developer chez Interface3. Non-hébergé donc lien live non disponible - à venir.",
-			"linkCode": "https://github.com/joruchan/Find-Your-Journey-V2",
-			"linkLive": null,
-			"techUsed": ["jQuery", "Javascript", "SCSS", "HTML", "PHP"]
-		},
-		{
-			"id": 5,
-			"name": "WoW Fusion",
-			"screenshot": "fusion.png",
-			"description": "Site réalisé pour une guilde sur le jeu World Of Warcraft Classic, avec WordPress et customisation du Thème Pro. Site privé et accessible uniquement aux membres.",
-			"linkCode": null,
-			"linkLive": "http://wow-fusion.com",
-			"techUsed": ["Wordpress", "SCSS", "HTML", "PHP"]
-		},
-		{
-			"id": 6,
-			"name": "I3 Gift Box",
-			"screenshot": "giftbox.png",
-			"description": "Application réalisée lors du Hackathon 2019 organisé par Interface3, en groupe de 3. Site non-hébergé pour l'instant, à venir.",
-			"linkCode": "https://github.com/joruchan/i3-market-place",
-			"linkLive": null,
-			"techUsed": ["Javascript", "jQuery", "SCSS", "HTML", "PHP", "MySQL"]
-		},
-		{
-			"id": 7,
-			"name": "R-Type Game",
-			"screenshot": "rType.png",
-			"description": "Mon tout premier jeu vidéo créé avec PhaserJS comme exercice de formation Front-End Developer chez Interface3. Thème : Créer et personnaliser un jeu R-Type.",
-			"linkCode": null,
-			"linkLive": "https://joruchan.itch.io/r-type-project",
-			"techUsed": ["Javascript", "Phaser"]
-		}
-	]
+    "projects": [
+        {
+            "id": 0,
+            "name": "Ibuki Training",
+            "screenshot": "ibuki.png",
+            "description": "Site one-page pour un personal trainer sur Waterloo. Réalisé pré-formation en autodidacte afin de me familiariser avec l'HTML et le SCSS. Son développement est mis de côté pour l'instant afin de pouvoir l'améliorer une fois ma formation terminée.",
+            "linkCode": "https://bitbucket.org/joruchan/ibukitraining/src/master/",
+            "linkLive": "https://ibukitraining.com",
+            "techUsed": ["HTML", "SSCSS"]
+        },
+        {
+            "id": 1,
+            "name": "Whack A Mole",
+            "screenshot": "whackAMole.png",
+            "description": "Petit jeu développé en jQuery durant ma formation chez Interface3 afin de s'entraîner à l'utilisation de jQuery et des évènements.",
+            "linkCode": "https://github.com/joruchan/whack-a-mole",
+            "linkLive": "https://joruchan.github.io/whack-a-mole/dist/",
+            "techUsed": ["jQuery", "HTML", "SCSS"]
+        },
+        {
+            "id": 2,
+            "name": "Games for grabs!",
+            "screenshot": "gamesToGive.png",
+            "description": "Application créée en Javascript et Bootstrap effectuant une requête vers un server JSON, listant des jeux pour lesquels j'avais des clés digitales en trop afin que des utilisateurs puissent les réclamer et recevoir la clé par e-mail.",
+            "linkCode": null,
+            "linkLive": "https://joruchan.github.io/jordane-games/dist/index.html",
+            "techUsed": ["jQuery", "Javascript", "SCSS", "Bootstrap", "HTML"]
+        },
+        {
+            "id": 3,
+            "name": "RouletteJS",
+            "screenshot": "RouletteJS.png",
+            "description": "Roulette de casino réalisée en jQuery comme exercice durant ma formation Interface3. A remporté la 1ère place d'un concours inter-classes.",
+            "linkCode": "https://github.com/joruchan/i3-roulette-JS-2019",
+            "linkLive": "https://joruchan.github.io/i3-roulette-JS-2019/dist/",
+            "techUsed": ["jQuery", "Javascript", "SCSS", "HTML"]
+        },
+        {
+            "id": 4,
+            "name": "Find Your Journey",
+            "screenshot": "fyj.png",
+            "description": "Site réalisé lors du premier projet de groupe (3 personnes) durant la formation Front-end Developer chez Interface3. Non-hébergé donc lien live non disponible - à venir.",
+            "linkCode": "https://github.com/joruchan/Find-Your-Journey-V2",
+            "linkLive": null,
+            "techUsed": ["jQuery", "Javascript", "SCSS", "HTML", "PHP"]
+        },
+        {
+            "id": 5,
+            "name": "WoW Fusion",
+            "screenshot": "fusion.png",
+            "description": "Site réalisé pour une guilde sur le jeu World Of Warcraft Classic, avec WordPress et customisation du Thème Pro. Site privé et accessible uniquement aux membres.",
+            "linkCode": null,
+            "linkLive": "http://wow-fusion.com",
+            "techUsed": ["Wordpress", "SCSS", "HTML", "PHP"]
+        },
+        {
+            "id": 6,
+            "name": "I3 Gift Box",
+            "screenshot": "giftbox.png",
+            "description": "Application réalisée lors du Hackathon 2019 organisé par Interface3, en groupe de 3. Site non-hébergé pour l'instant, à venir.",
+            "linkCode": "https://github.com/joruchan/i3-market-place",
+            "linkLive": null,
+            "techUsed": ["Javascript", "jQuery", "SCSS", "HTML", "PHP", "MySQL"]
+        },
+        {
+            "id": 7,
+            "name": "R-Type Game",
+            "screenshot": "rType.png",
+            "description": "Mon tout premier jeu vidéo créé avec PhaserJS comme exercice de formation Front-End Developer chez Interface3. Thème : Créer et personnaliser un jeu R-Type.",
+            "linkCode": null,
+            "linkLive": "https://joruchan.itch.io/r-type-project",
+            "techUsed": ["Javascript", "Phaser"]
+        },
+        {
+            "id": 8,
+            "name": "Algua Cow",
+            "screenshot": "alguaCow.png",
+            "description": "Jeu vidéo Phaser développé de A à Z (graphismes, audio, développement) en deux jours dans le cadre de ma formation. Thème : Créer un jeu d'une durée d'environ 1m30 faisant passer un message.",
+            "linkCode": "https://github.com/joruchan/algua-cow",
+            "linkLive": "https://joruchan.itch.io/algua-cow",
+            "techUsed": ["Javascript", "Phaser"]
+        }
+    ]
 }

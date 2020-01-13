@@ -269,10 +269,17 @@ main{
 			h2{
 				background-image: linear-gradient(to right, var(--dark-color) 20%, #ab8467 100%);
 			}
+			.container{
+				margin-top: 10rem;
+			}
 		}
 		&#experiences{
 			h2{
 				background-image: linear-gradient(to right, var(--dark-color) 20%, #f09819 100%);
+			}
+			.container{
+				margin-top: 10rem;
+				margin-bottom: 10rem;
 			}
 		}
 		&#hobbies{
