@@ -36,18 +36,3 @@
     }
 }
 
-@media only screen and (max-width: 900px) {
-    .card-action{
-        i{
-            display:none;
-        }
-    }
-    .icons{
-        justify-content: center;
-        .icon{
-            &:before{
-                display:none;
-            }
-        }
-    }
-  }
