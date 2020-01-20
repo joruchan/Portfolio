@@ -1,14 +1,19 @@
 /* eslint-disable no-tabs */
 import $ from 'jquery';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import data from './app/projects.json';
-import {
-  darkMode, darkModeToggle, enableDarkMode, disableDarkMode,
-} from './app/darkmode';
+import './app/darkmode';
 
+AOS.init();
 
 document.addEventListener('DOMContentLoaded', () => {
-  const elems = document.querySelectorAll('.sidenav');
-  const instances = M.Sidenav.init(elems);
+  const elemsSidenav = document.querySelectorAll('.sidenav');
+  const sidenav = M.Sidenav.init(elemsSidenav);
+  const elemsTooltip = document.querySelectorAll('.tooltipped');
+  const tooltips = M.Tooltip.init(elemsTooltip);
+  const elemsCarousel = document.querySelectorAll('.carousel');
+  const carousel = M.Carousel.init(elemsCarousel);
 
   $('.sidenav-close').on('click', () => {
     $('#slide-out').animate({
@@ -37,20 +42,11 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-document.addEventListener('DOMContentLoaded', () => {
-  const elems = document.querySelectorAll('.tooltipped');
-  const instances = M.Tooltip.init(elems);
-});
-document.addEventListener('DOMContentLoaded', () => {
-  const elems = document.querySelectorAll('.carousel');
-  const instances = M.Carousel.init(elems);
-});
-
 const sortedProjects = data.projects.reverse();
 for (const project of sortedProjects) {
   const techUsed = project.techUsed.join(' - ');
   let component = `
-					  <div class="col l6">
+					  <div class="col xl6">
 						  <div class="card sticky-action .shadow-diffuse">
 							  <div class="card-image waves-effect waves-block waves-light">
 								  <img class="activator" src="./assets/images/projects/${project.screenshot}" />

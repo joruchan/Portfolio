@@ -9,11 +9,14 @@
         }
         .card-action{
             display:flex;
+            justify-content:space-around;
             a{
                 text-transform: uppercase;
                 display:flex;
                 align-items: center;
                 font-size: 1rem;
+                margin-right:0;
+                color: var(--links);
                 i.material-icons{
                     margin-left: 0.6rem;
                     margin-bottom: 2px;
@@ -32,3 +35,19 @@
         }
     }
 }
+
+@media only screen and (max-width: 900px) {
+    .card-action{
+        i{
+            display:none;
+        }
+    }
+    .icons{
+        justify-content: center;
+        .icon{
+            &:before{
+                display:none;
+            }
+        }
+    }
+  }

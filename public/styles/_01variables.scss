@@ -2,6 +2,7 @@
 	--dark-color: #666;
 	--light-color: white;
 	--off-light: #f0f0f0;	
+	--links: rgb(192, 108, 108);
 }
 
 $indigo: #536dfe;
@@ -14,8 +15,10 @@ $darkpink: #d81b60;
 $purple: #ab47bc;
 
 
+
 .darkmode{
 	--dark-color: white;
 	--light-color: #666;
 	--off-light: #737373;
+	--links: rgb(121, 202, 114);
 }

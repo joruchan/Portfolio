@@ -125,20 +125,53 @@ main{
 							&:hover:after{
 								opacity: 1;
 							}
+							&:before{
+								content: "";
+								position:absolute;
+								opacity: 0;
+								bottom: -40px;
+								left: 50%;
+								transform: translateX(-50%);
+								width: auto;
+								font-size: 0.9rem;
+								transition: all 250ms ease-in-out;
+								background: var(--light-color);
+								color: var(--dark-color);
+								border-radius: 20px;
+								border-top-left-radius: 0;
+								border-top-right-radius: 0;
+								padding: 5px 10px;
+								z-index:1;
+							}
+							&:hover:before{
+								opacity: 1;
+								transform: translateY(-5px) translateX(-50%);
+								box-shadow: 0 0px 4px rgba(0, 0, 0, 0.12), 0 0px 8px rgba(0, 0, 0, 0.18);
+								
+							}
 						}
 						.icon-html{
 							&:after{
 								background-image: url(assets/images/logos/html-color.png);
+							}
+							&:before{
+								content: "HTML5";
 							}
 						}
 						.icon-css{
 							&:after{
 								background-image: url(assets/images/logos/css-color.png);
 							}
+							&:before{
+								content: "CSS3";
+							}
 						}
 						.icon-sass{
 							&:after{
 								background-image: url(assets/images/logos/sass-color.png);
+							}
+							&:before{
+								content: "SASS/SCSS";
 							}
 						}
 						.icon-materialise{
@@ -148,90 +181,144 @@ main{
 								background-position: center center;
 								background-image: url(assets/images/logos/materialise-color.png);
 							}
+							&:before{
+								content: "Materialize";
+							}
 						}
 						.icon-bootstrap{
 							&:after{
 								background-image: url(assets/images/logos/bootstrap-color.png);
+							}
+							&:before{
+								content: "Bootstrap";
 							}
 						}
 						.icon-javascript{
 							&:after{
 								background-image: url(assets/images/logos/javascript-color.png);
 							}
+							&:before{
+								content: "JavaScript";
+							}
 						}
 						.icon-jquery{
 							&:after{
 								background-image: url(assets/images/logos/jquery-full.png);
+							}
+							&:before{
+								content: "jQuery";
 							}
 						}
 						.icon-react{
 							&:after{
 								background-image: url(assets/images/logos/react-color.png);
 							}
+							&:before{
+								content: "React";
+							}
 						}
 						.icon-vue{
 							&:after{
 								background-image: url(assets/images/logos/vue-color.png);
+							}
+							&:before{
+								content: "VueJS";
 							}
 						}
 						.icon-angular{
 							&:after{
 								background-image: url(assets/images/logos/angular-color.png);
 							}
+							&:before{
+								content: "AngularJS";
+							}
 						}
 						.icon-phaser{
 							&:after{
 								background-image: url(assets/images/logos/phaser-color.png);
+							}
+							&:before{
+								content: "Phaser";
 							}
 						}
 						.icon-php{
 							&:after{
 								background-image: url(assets/images/logos/php-color.png);
 							}
+							&:before{
+								content: "PHP7";
+							}
 						}
 						.icon-node{
 							&:after{
 								background-image: url(assets/images/logos/node-color.png);
+							}
+							&:before{
+								content: "NodeJS";
 							}
 						}
 						.icon-mysql{
 							&:after{
 								background-image: url(assets/images/logos/mysql-color.png);
 							}
+							&:before{
+								content: "MySQL";
+							}
 						}
 						.icon-mongodb{
 							&:after{
 								background-image: url(assets/images/logos/mongo-color.png);
+							}
+							&:before{
+								content: "MongoDB";
 							}
 						}
 						.icon-wordpress{
 							&:after{
 								background-image: url(assets/images/logos/wordpress-color.png);
 							}
+							&:before{
+								content: "WordPress";
+							}
 						}
 						.icon-drupal{
 							&:after{
 								background-image: url(assets/images/logos/drupal-color.png);
+							}
+							&:before{
+								content: "Drupal";
 							}
 						}
 						.icon-photoshop{
 							&:after{
 								background-image: url(assets/images/logos/photoshop-color.png);
 							}
+							&:before{
+								content: "Photoshop";
+							}
 						}
 						.icon-illustrator{
 							&:after{
 								background-image: url(assets/images/logos/illustrator-color.png);
+							}
+							&:before{
+								content: "Illustrator";
 							}
 						}
 						.icon-xd{
 							&:after{
 								background-image: url(assets/images/logos/xd-color.png);
 							}
+							&:before{
+								content: "AdobeXD";
+							}
 						}
 						.icon-git{
 							&:after{
 								background-image: url(assets/images/logos/git-color.png);
+							}
+							&:before{
+								content: "Git";
 							}
 						}
 						.icon-visual{
@@ -245,6 +332,9 @@ main{
 								background-position: center;
 								background-image: url(assets/images/logos/visual-color.png);
 							}
+							&:before{
+								content: "VSCode";
+							}
 						}
 					}
 				}
@@ -257,7 +347,7 @@ main{
             }
             .projects-list{
                 padding-top: 3rem;
-            }
+			}
 		}
 		&#formations{
 			h2{
@@ -321,6 +411,40 @@ main{
 		&#contact{
 			h2{
 				background-image: linear-gradient(to right, var(--dark-color) 20%, #7e51c4 100%);
+			}
+			display:flex;
+			flex-direction:column;
+			justify-content: space-between;
+			.contact-content{
+				display:flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				text-align:center;
+				p{
+					margin:1rem 0 0 0;
+				}
+				img{
+					margin-top: 2rem;
+				}
+				.phone{
+					p{
+						font-size: 2rem;
+					}
+				}
+			}
+			footer{
+				display:flex;
+				justify-content: flex-end;
+				
+				p{
+					box-shadow: 0px 0 10px 5px rgba(0,0,0,0.12);
+					margin:0;
+					padding: 10px;
+					border-radius: 10px;
+					font-size: 1rem;
+					text-transform: uppercase;
+				}
 			}
 		}
 	}
