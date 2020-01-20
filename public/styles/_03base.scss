@@ -16,6 +16,11 @@ body{
   }
 }
 
+.name{
+	br{
+		display:none;
+	}
+}
 
 @media only screen and (max-width: 900px) {
   .card-action{

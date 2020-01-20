@@ -70,12 +70,6 @@
 	animation: sideSlide .5s forwards;
 }
 
-.name{
-	br{
-		display:none;
-	}
-}
-
 @keyframes sideSlide {
 	60% {
 		transform: translate(20px, 0) scale(1);
