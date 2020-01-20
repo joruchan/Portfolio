@@ -7,14 +7,6 @@ import './app/darkmode';
 
 AOS.init();
 
-$(document).ready(() => {
-  const preloaderFadeOutTime = 500;
-  function hidePreloader() {
-    const preloader = $('.spinner-wrapper');
-    preloader.hide();
-  }
-  hidePreloader();
-});
 
 document.addEventListener('DOMContentLoaded', () => {
   const elemsSidenav = document.querySelectorAll('.sidenav');
