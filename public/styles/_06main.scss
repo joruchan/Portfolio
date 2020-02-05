@@ -436,15 +436,18 @@ main{
 			footer{
 				display:flex;
 				justify-content: flex-end;
-				
-				p{
-					box-shadow: 0px 0 10px 5px rgba(0,0,0,0.12);
-					margin:0;
-					padding: 10px;
-					border-radius: 10px;
-					font-size: 1rem;
-					text-transform: uppercase;
+				div{
+					display:flex;	
+					p{
+						box-shadow: 0px 0 10px 5px rgba(0,0,0,0.12);
+						margin:0;
+						padding: 10px;
+						border-radius: 10px;
+						font-size: 1rem;
+						text-transform: uppercase;
+					}
 				}
+				
 			}
 		}
 	}
@@ -455,6 +458,11 @@ main{
 		margin-left: 0px;
 		h2{
 			padding-left: 15px;
+		}
+	}
+	footer{
+		div{
+			flex-direction: column;
 		}
 	}
 }

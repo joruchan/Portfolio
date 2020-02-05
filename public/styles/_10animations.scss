@@ -138,3 +138,29 @@ left: 48%;
 			  transform: rotate(360deg);
 	}
   }
+
+
+// Bouncing Coffee
+
+.float{
+	animation: float 2000ms infinite;
+}
+
+@keyframes float{
+	0% {
+		box-shadow: 0 0px 0px 0px rgba(0,0,0,0.2);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 10px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-5px);
+	}
+	70% {
+		box-shadow: 0 0px 0px 0px rgba(0,0,0,0.2);
+		transform: translatey(0px);
+	}
+	100% {
+		box-shadow: 0 0px 0px 0px rgba(0,0,0,0.2);
+		transform: translatey(0px);
+	}
+}
