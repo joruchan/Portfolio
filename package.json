@@ -1,7 +1,7 @@
 {
-    "name": "webpack-seed-js-sass",
-    "version": "1.0.3",
-    "description": "An empty project to begin pure JavaScript front-end coding out of the box.",
+    "name": "Portfolio de Jordane Frechet",
+    "version": "1.0.0",
+    "description": "Le portfolio de Jordane rassemblant son parcours et ses compétences",
     "engines": {
         "node": "^12.0.0",
         "npm": "^6.0.0"
@@ -11,7 +11,7 @@
         "build": "webpack -p",
         "start": "webpack-dev-server"
     },
-    "author": "Loïc TRUCHOT",
+    "author": "Jordane Frechet",
     "license": "CC-BY-NC-4.0",
     "devDependencies": {
         "@babel/core": "7.7.2",
