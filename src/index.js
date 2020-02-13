@@ -1,48 +1,48 @@
 /* eslint-disable no-tabs */
-import $ from "jquery";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import data from "./app/projects.json";
-import "./app/darkmode";
+import $ from 'jquery';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import data from './app/projects.json';
+import './app/darkmode';
 
 AOS.init();
 
-document.addEventListener("DOMContentLoaded", () => {
-    const elemsSidenav = document.querySelectorAll(".sidenav");
+document.addEventListener('DOMContentLoaded', () => {
+    const elemsSidenav = document.querySelectorAll('.sidenav');
     const sidenav = M.Sidenav.init(elemsSidenav);
-    const elemsTooltip = document.querySelectorAll(".tooltipped");
+    const elemsTooltip = document.querySelectorAll('.tooltipped');
     const tooltips = M.Tooltip.init(elemsTooltip);
-    const elemsCarousel = document.querySelectorAll(".carousel");
+    const elemsCarousel = document.querySelectorAll('.carousel');
     const carousel = M.Carousel.init(elemsCarousel);
 
-    $(".sidenav-close").on("click", () => {
-        $("#slide-out").animate(
+    $('.sidenav-close').on('click', () => {
+        $('#slide-out').animate(
             {
-                width: "0px",
-                "margin-left": "-300px",
-                opacity: "0"
+                width: '0px',
+                'margin-left': '-300px',
+                opacity: '0',
             },
-            500
+            500,
         );
         if (window.innerWidth > 992) {
-            $("main").animate({
-                "margin-left": "50px"
+            $('main').animate({
+                'margin-left': '50px',
             });
         }
     });
 
-    $(".side-nav").on("click", () => {
-        $("#slide-out").animate(
+    $('.side-nav').on('click', () => {
+        $('#slide-out').animate(
             {
-                width: "300px",
-                "margin-left": "0",
-                opacity: "1"
+                width: '300px',
+                'margin-left': '0',
+                opacity: '1',
             },
-            500
+            500,
         );
         if (window.innerWidth > 992) {
-            $("main").animate({
-                "margin-left": "300px"
+            $('main').animate({
+                'margin-left': '300px',
             });
         }
     });
@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const sortedProjects = data.projects.reverse();
 for (const project of sortedProjects) {
-    const techUsed = project.techUsed.join(" - ");
+    const techUsed = project.techUsed.join(' - ');
     let component = `
 					  <div class="col xl6">
 						  <div class="card sticky-action .shadow-diffuse">
@@ -86,5 +86,5 @@ for (const project of sortedProjects) {
 			  </div>
 		  </div>
 		  `;
-    $(".projects-list").append(component);
+    $('.projects-list').append(component);
 }
